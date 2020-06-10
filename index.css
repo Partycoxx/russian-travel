@@ -1,0 +1,17 @@
+@import url(./vendor/normalize.css);
+@import url(./blocks/fonts/fonts.css);
+
+
+.page {
+    min-width: 320px;
+    max-width: 1280px;
+    background-color: #2A2C2F;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Inter';
+    color: #FFF;
+}
+
+div {
+    border: 1px solid red;
+}
