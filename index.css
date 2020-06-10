@@ -28,7 +28,7 @@
   width: 176px;
   height: 52px;
   background-image: url(./images/header-logo.svg);
-  }
+}
 
 .header__link {
   color: #fff;
@@ -41,6 +41,184 @@
 .header__link:last-child {
   margin-right: 0;
   text-decoration: none;
+}
+
+/* У всех секций margin-top можно реализовать через calc()*/
+
+.lead {
+  margin: 56px 148px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lead__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 0 32px;
+  min-width: 288px;
+  max-width: 720px;
+}
+
+.lead__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 64px;
+  min-width: 288px;
+  max-width: 640px;
+}
+
+.lead__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lead__caption {
+  align-self: flex-start;
+  margin: 8px 0 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin-top: 92px;
+  margin-left: 148px;
+  width: 690px; /* Не забыть поправить на относительные единицы */
+}
+
+.intro__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0 0 40px;
+}
+
+.intro__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 0 32px;
+}
+
+.intro__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.intro__list-item_type_bold {
+  font-weight: bold;
+}
+
+.intro__list-item_type_regular {
+  font-weight: normal;
+}
+
+.photo-grid {
+  margin: 92px 48px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(213px, 1fr));
+  grid-gap: 16px;
+}
+
+.photo-grid__element {
+  object-fit: cover;
+  width: 100%;
+}
+
+.places {
+  margin: 92px 148px 0;
+}
+
+.places__list {
+  margin: 0;  
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  grid-gap: 80px;
+}
+
+.places__place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas:
+    "heading url"
+    "image text";
+  grid-row-gap: 48px;
+  grid-column-gap: 40px;
+}
+
+.places__title {
+  grid-area: heading;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.places__url-heading {
+  margin: 0 0 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #aaaaaa;
+}
+
+.places__link {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.places__website {
+  grid-area: url;
+  align-self: end;
+}
+
+.places__image {
+  width: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.places__text {
+  grid-area: text;
+}
+
+.places__paragraph {
+  margin: 0 0 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.places__paragraph:last-child {
+  margin: 0;
 }
 
 div,
