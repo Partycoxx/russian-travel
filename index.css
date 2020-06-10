@@ -1,17 +1,52 @@
 @import url(./vendor/normalize.css);
 @import url(./blocks/fonts/fonts.css);
 
-
 .page {
-    min-width: 320px;
-    max-width: 1280px;
-    background-color: #2A2C2F;
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: 'Inter';
-    color: #FFF;
+  min-width: 320px;
+  max-width: 1280px;
+  background-color: #2a2c2f;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  color: #fff; /* не забыть убрать */
+  padding: 28px 0 24px;
 }
 
-div {
-    border: 1px solid red;
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 48px;
+  height: 54px; /* не забыть поправить*/
+  align-items: flex-end;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 176px;
+  height: 52px;
+  background-image: url(./images/header-logo.svg);
+  }
+
+.header__link {
+  color: #fff;
+  margin-right: 18px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__link:last-child {
+  margin-right: 0;
+  text-decoration: none;
+}
+
+div,
+header,
+main,
+section,
+footer {
+  border: 1px solid red;
 }
