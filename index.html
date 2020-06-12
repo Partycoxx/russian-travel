@@ -12,12 +12,18 @@
         <img class="header__logo" src="./images/header-logo.svg" alt="Лого" />
         <ul class="header__list">
           <li class="header__list-item">
-            <a class="header__link header__link_underline" href="#">Ru</a>
+            <a
+              class="header__link header__link_decoration_underline change-opacity"
+              href="#"
+              >Ru</a
+            >
           </li>
-          <li class="header__list-item"><a class="header__link" href="#">En</a></li>
+          <li class="header__list-item">
+            <a class="header__link change-opacity" href="#">En</a>
+          </li>
         </ul>
       </header>
-      <!--Добавить подписи к картинкам, переделать ссылки-->
+
       <main class="content">
         <section class="lead">
           <h1 class="lead__title">Путешествия по России</h1>
@@ -47,100 +53,94 @@
             вашего отпуска.
           </p>
           <ul class="intro__list">
-            <li class="intro__list-item intro__list-item_type_bold">
-              Часовых поясов
-              <span class="intro__list-item intro__list-item_type_regular"
-                >11</span
-              >
+            <li class="intro__list-item">
+              <span class="intro__item intro__item_weight_bold"
+                >Часовых поясов </span
+              >11
             </li>
-            <li class="intro__list-item intro__list-item_type_bold">
-              Объектов природного наследия ЮНЕСКО
-              <span class="intro__list-item intro__list-item_type_regular"
-                >12</span
-              >
+            <li class="intro__list-item">
+              <span class="intro__item intro__item_weight_bold"
+                >Объектов природного наследия ЮНЕСКО </span
+              >12
             </li>
-            <li class="intro__list-item intro__list-item_type_bold">
-              Объектов культурного наследия ЮНЕСКО
-              <span class="intro__list-item intro__list-item_type_regular"
-                >16</span
-              >
+            <li class="intro__list-item">
+              <span class="intro__item intro__item_weight_bold"
+                >Объектов культурного наследия ЮНЕСКО </span
+              >16
             </li>
-            <li class="intro__list-item intro__list-item_type_bold">
-              Природных заповедников
-              <span class="intro__list-item intro__list-item_type_regular"
-                >105</span
-              >
+            <li class="intro__list-item">
+              <span class="intro__item intro__item_weight_bold"
+                >Природных заповедников </span
+              >105
             </li>
-            <li class="intro__list-item intro__list-item_type_bold">
-              Аэропортов
-              <span class="intro__list-item intro__list-item_type_regular"
-                >241</span
-              >
+            <li class="intro__list-item">
+              <span class="intro__item intro__item_weight_bold"
+                >Аэропортов </span
+              >241
             </li>
           </ul>
         </section>
 
         <section class="photo-grid">
-          <!-- Не забыть добавить alt-->
           <img
             class="photo-grid__element"
             src="./images/grid-pic-1.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-2.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-3.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-4.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-5.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-6.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-7.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-8.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-9.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-10.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-11.jpg"
-            alt=""
+            alt="Фото природы"
           />
           <img
             class="photo-grid__element"
             src="./images/grid-pic-12.jpg"
-            alt=""
+            alt="Фото природы"
           />
         </section>
 
@@ -148,7 +148,11 @@
           <ul class="places__list">
             <li class="places__place">
               <h2 class="places__title">Куршская коса</h2>
-              <img class="places__image" src="./images/place-kosa.jpg" alt="" />
+              <img
+                class="places__image"
+                src="./images/place-kosa.jpg"
+                alt="Фото Куршской косы"
+              />
               <div class="places__website">
                 <p class="places__url-heading">URL</p>
                 <a
@@ -157,7 +161,6 @@
                   target="_blank"
                   >park-kosa.ru</a
                 >
-                <!-- Не забыть добавить ссылки-->
               </div>
               <div class="places__text">
                 <p class="places__paragraph">
@@ -181,7 +184,7 @@
               <img
                 class="places__image"
                 src="./images/place-kolsky.jpg"
-                alt=""
+                alt="Фото Кольского полуострова"
               />
               <div class="places__website">
                 <p class="places__url-heading">URL</p>
@@ -214,7 +217,7 @@
               <img
                 class="places__image"
                 src="./images/place-altay.jpg"
-                alt=""
+                alt="Фото Алтая"
               />
               <div class="places__website">
                 <p class="places__url-heading">URL</p>
@@ -247,7 +250,7 @@
               <img
                 class="places__image"
                 src="./images/place-baikal.jpg"
-                alt=""
+                alt="Фото зимнего Байкала"
               />
               <div class="places__website">
                 <p class="places__url-heading">URL</p>
@@ -279,7 +282,7 @@
               <img
                 class="places__image"
                 src="./images/place-karelia.jpg"
-                alt=""
+                alt="Фото Карелии"
               />
               <div class="places__website">
                 <p class="places__url-heading">URL</p>
@@ -317,7 +320,7 @@
             <img
               class="cover__image"
               src="./images/cover-background.jpg"
-              alt=""
+              alt="Фото поездов"
             />
             <div class="cover__overlay">
               <h2 class="cover__title">До Байкала «на собаках»</h2>
